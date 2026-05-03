@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
+<!-- saved from url=(0057)file:///C:/Users/tachi/Downloads/ashino8020_engine_2.html -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>足の８０２０ 社会貢献試算エンジン</title>
+<title>足の８０２０ 社会貢献試算エンジン — AMI</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500&family=DM+Serif+Display&display=swap');
- 
+
 :root {
   --ink: #1a1a18;
   --ink-light: #4a4a46;
@@ -21,16 +21,16 @@
   --red: #9b2226;
   --border: #d4ccbb;
 }
- 
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
 body {
   font-family: 'Noto Sans JP', sans-serif;
   background: var(--paper);
   color: var(--ink);
   min-height: 100vh;
 }
- 
+
 /* ── ヘッダー ── */
 .site-header {
   background: var(--ink);
@@ -52,14 +52,14 @@ body {
   color: #aaa;
   text-transform: uppercase;
 }
- 
+
 /* ── メインレイアウト ── */
 .main {
   max-width: 900px;
   margin: 0 auto;
   padding: 48px 24px 80px;
 }
- 
+
 .page-title {
   font-family: 'Noto Serif JP', serif;
   font-size: 28px;
@@ -73,7 +73,7 @@ body {
   margin-bottom: 40px;
   line-height: 1.8;
 }
- 
+
 /* ── インプットカード ── */
 .card {
   background: white;
@@ -82,7 +82,7 @@ body {
   padding: 32px;
   margin-bottom: 24px;
 }
- 
+
 .card-title {
   font-family: 'Noto Serif JP', serif;
   font-size: 15px;
@@ -93,7 +93,7 @@ body {
   border-bottom: 1px solid var(--border);
   letter-spacing: .06em;
 }
- 
+
 .field-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -101,7 +101,7 @@ body {
   margin-bottom: 24px;
 }
 @media(max-width:560px){.field-group{grid-template-columns:1fr;}}
- 
+
 .field label {
   display: block;
   font-size: 12px;
@@ -126,14 +126,14 @@ body {
   border-color: var(--accent-light);
   background: white;
 }
- 
+
 .hint {
   font-size: 11px;
   color: var(--ink-muted);
   margin-top: 4px;
   line-height: 1.6;
 }
- 
+
 /* スライダー */
 .slider-row {
   margin-bottom: 20px;
@@ -179,7 +179,7 @@ input[type=range]::-webkit-slider-thumb {
   border: 2px solid white;
   box-shadow: 0 1px 4px rgba(0,0,0,.2);
 }
- 
+
 /* ── 計算ボタン ── */
 .calc-btn {
   width: 100%;
@@ -197,11 +197,11 @@ input[type=range]::-webkit-slider-thumb {
 }
 .calc-btn:hover { background: var(--accent); }
 .calc-btn:active { transform: scale(.99); }
- 
+
 /* ── 結果エリア ── */
 #result-area { display: none; }
 #result-area.visible { display: block; }
- 
+
 .result-header {
   text-align: center;
   padding: 40px 0 32px;
@@ -224,7 +224,7 @@ input[type=range]::-webkit-slider-thumb {
   line-height: 1.6;
   color: var(--ink);
 }
- 
+
 /* 数値ハイライト */
 .big-numbers {
   display: grid;
@@ -233,7 +233,7 @@ input[type=range]::-webkit-slider-thumb {
   margin-bottom: 24px;
 }
 @media(max-width:560px){.big-numbers{grid-template-columns:1fr;}}
- 
+
 .num-card {
   background: white;
   border: 0.5px solid var(--border);
@@ -263,7 +263,7 @@ input[type=range]::-webkit-slider-thumb {
   color: var(--ink-light);
   margin-top: 4px;
 }
- 
+
 /* ── 通知書プレビュー ── */
 .notice-wrap {
   border: 1px solid var(--border);
@@ -296,7 +296,7 @@ input[type=range]::-webkit-slider-thumb {
   transition: background .15s;
 }
 .print-btn:hover { background: var(--ink); color: white; }
- 
+
 /* 通知書本体 */
 #notice-doc {
   background: white;
@@ -305,7 +305,7 @@ input[type=range]::-webkit-slider-thumb {
   font-family: 'Noto Serif JP', serif;
 }
 @media(max-width:640px){#notice-doc{padding:32px 24px;}}
- 
+
 .notice-watermark {
   text-align: center;
   margin-bottom: 32px;
@@ -321,7 +321,7 @@ input[type=range]::-webkit-slider-thumb {
   letter-spacing: .1em;
   margin-top: 4px;
 }
- 
+
 .notice-title-block {
   text-align: center;
   border-top: 2px solid var(--ink);
@@ -341,7 +341,7 @@ input[type=range]::-webkit-slider-thumb {
   letter-spacing: .1em;
   margin-top: 6px;
 }
- 
+
 .notice-recipient {
   margin-bottom: 28px;
 }
@@ -359,7 +359,7 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: 4px;
   font-family: 'Noto Sans JP', sans-serif;
 }
- 
+
 .notice-body {
   font-size: 14px;
   line-height: 2.0;
@@ -380,7 +380,7 @@ input[type=range]::-webkit-slider-thumb {
   margin: 16px 0;
   letter-spacing: .05em;
 }
- 
+
 .notice-table {
   width: 100%;
   border-collapse: collapse;
@@ -407,7 +407,7 @@ input[type=range]::-webkit-slider-thumb {
   color: var(--ink);
   font-weight: 500;
 }
- 
+
 .notice-impact {
   background: var(--gold-pale);
   border: 1px solid #e8d5a0;
@@ -428,7 +428,7 @@ input[type=range]::-webkit-slider-thumb {
   color: var(--ink-light);
   line-height: 1.9;
 }
- 
+
 .notice-footer-block {
   display: flex;
   justify-content: space-between;
@@ -458,7 +458,7 @@ input[type=range]::-webkit-slider-thumb {
   line-height: 1.4;
   font-family: 'Noto Serif JP', serif;
 }
- 
+
 /* ── 根拠説明 ── */
 .evidence-section {
   margin-top: 32px;
@@ -493,7 +493,7 @@ input[type=range]::-webkit-slider-thumb {
   font-size: 10px;
   top: 3px;
 }
- 
+
 /* 印刷スタイル */
 @media print {
   body { background: white; }
@@ -505,22 +505,22 @@ input[type=range]::-webkit-slider-thumb {
 </style>
 </head>
 <body>
- 
+
 <header class="site-header">
   <span class="logo">足の８０２０</span>
-  <span class="sub">Social Contribution Engine · 社会貢献試算エンジン</span>
+  <span class="sub">Social Contribution Engine · 社会貢献試算エンジン — AMI単位</span>
 </header>
- 
+
 <main class="main">
   <h1 class="page-title">あなたの「歩く」が、<br>社会をどれだけ変えたか。</h1>
   <p class="page-sub">
     歩行習慣による健康寿命の延伸は、医療費・介護費の削減に直接つながります。<br>
-    厚生労働省のデータをもとに、あなたの社会貢献額を試算します。
+    厚生労働省のデータをもとに、あなたの社会貢献を <strong>AMI</strong>（1 AMI = 1円換算の独自単位）で試算します。
   </p>
- 
+
   <div class="card" id="calc-section">
     <div class="card-title">入力情報</div>
- 
+
     <div class="field-group">
       <div class="field">
         <label>お名前（通知書に記載）</label>
@@ -536,14 +536,14 @@ input[type=range]::-webkit-slider-thumb {
         </select>
       </div>
     </div>
- 
+
     <div class="field-group">
       <div class="field">
         <label>年齢層</label>
         <select id="inp-age">
           <option value="30">30代</option>
           <option value="40">40代</option>
-          <option value="50" selected>50代</option>
+          <option value="50" selected="">50代</option>
           <option value="60">60代</option>
           <option value="70">70代以上</option>
         </select>
@@ -553,61 +553,58 @@ input[type=range]::-webkit-slider-thumb {
         <label>居住地域</label>
         <select id="inp-region">
           <option value="city">政令指定都市・大都市</option>
-          <option value="urban" selected>地方中核都市</option>
+          <option value="urban" selected="">地方中核都市</option>
           <option value="rural">町村・過疎地域</option>
         </select>
         <p class="hint">地域により一人あたり医療費の水準が異なります</p>
       </div>
     </div>
- 
+
     <div class="slider-row">
       <div class="slider-label">
         <span>5月中に歩いた日数</span>
         <span><span class="slider-val" id="val-days">18</span><span class="slider-unit">日 / 31日中</span></span>
       </div>
-      <input type="range" id="sl-days" min="1" max="31" value="18" step="1"
-        oninput="document.getElementById('val-days').textContent=this.value">
+      <input type="range" id="sl-days" min="1" max="31" value="18" step="1" oninput="document.getElementById(&#39;val-days&#39;).textContent=this.value">
     </div>
- 
+
     <div class="slider-row">
       <div class="slider-label">
         <span>1日あたりの平均歩行時間</span>
         <span><span class="slider-val" id="val-min">28</span><span class="slider-unit">分</span></span>
       </div>
-      <input type="range" id="sl-min" min="20" max="90" value="28" step="1"
-        oninput="document.getElementById('val-min').textContent=this.value">
+      <input type="range" id="sl-min" min="20" max="90" value="28" step="1" oninput="document.getElementById(&#39;val-min&#39;).textContent=this.value">
     </div>
- 
+
     <div class="slider-row">
       <div class="slider-label">
         <span>足の８０２０への参加継続年数</span>
         <span><span class="slider-val" id="val-years">1</span><span class="slider-unit">年</span></span>
       </div>
-      <input type="range" id="sl-years" min="1" max="10" value="1" step="1"
-        oninput="document.getElementById('val-years').textContent=this.value">
+      <input type="range" id="sl-years" min="1" max="10" value="1" step="1" oninput="document.getElementById(&#39;val-years&#39;).textContent=this.value">
       <p class="hint" style="margin-top:8px">継続年数が増えると、習慣化による複利効果が加算されます</p>
     </div>
- 
-    <button class="calc-btn" onclick="calculate()">社会貢献額を試算する</button>
+
+    <button class="calc-btn" onclick="calculate()">社会貢献AMIを試算する</button>
   </div>
- 
+
   <!-- 結果エリア -->
   <div id="result-area">
     <div class="result-header">
       <div class="year-badge" id="r-badge">2026年 参加証明</div>
       <h2 id="r-headline">あなたの歩行習慣が生み出した社会への贈り物</h2>
     </div>
- 
+
     <div class="big-numbers">
       <div class="num-card">
-        <div class="n-label">今年の推計削減額</div>
+        <div class="n-label">今年の推計社会貢献</div>
         <div class="n-value" id="r-annual">0</div>
-        <div class="n-unit">円</div>
+        <div class="n-unit">AMI</div>
       </div>
       <div class="num-card primary">
-        <div class="n-label">累計社会貢献額</div>
+        <div class="n-label">累計社会貢献</div>
         <div class="n-value" id="r-total">0</div>
-        <div class="n-unit">円</div>
+        <div class="n-unit">AMI</div>
       </div>
       <div class="num-card">
         <div class="n-label">歩行達成日数</div>
@@ -615,51 +612,51 @@ input[type=range]::-webkit-slider-thumb {
         <div class="n-unit">日</div>
       </div>
     </div>
- 
+
     <!-- 通知書 -->
     <div class="notice-wrap">
       <div class="notice-toolbar">
-        <span>社会貢献通知書（プレビュー）</span>
+        <span>AMI 社会貢献通知書（プレビュー）</span>
         <button class="print-btn" onclick="window.print()">印刷 / PDF保存</button>
       </div>
- 
+
       <div id="notice-doc">
         <div class="notice-watermark">
           <div class="org">一般社団法人　足の８０２０</div>
           <div class="year" id="nd-year">令和８年度（2026年）</div>
         </div>
- 
+
         <div class="notice-title-block">
-          <h1>社会貢献通知書</h1>
-          <div class="notice-sub">Social Contribution Certificate</div>
+          <h1>AMI 社会貢献通知書</h1>
+          <div class="notice-sub">AMI Social Contribution Certificate</div>
         </div>
- 
+
         <div class="notice-recipient">
           <div class="name" id="nd-name">　　　　　　　　</div>
           <div class="name-sub">殿</div>
         </div>
- 
+
         <div class="notice-body" id="nd-body">
           <!-- JSで動的生成 -->
         </div>
- 
+
         <table class="notice-table">
           <thead>
             <tr>
               <th>項目</th>
               <th>内容</th>
-              <th style="text-align:right">推計削減額</th>
+              <th style="text-align:right">AMI</th>
             </tr>
           </thead>
           <tbody id="nd-table-body">
           </tbody>
         </table>
- 
+
         <div class="notice-impact">
           <div class="impact-title">社会的インパクト換算</div>
           <div class="impact-body" id="nd-impact"></div>
         </div>
- 
+
         <div class="notice-footer-block">
           <div class="issuer">
             <div>発行日：<span id="nd-date"></span></div>
@@ -670,7 +667,7 @@ input[type=range]::-webkit-slider-thumb {
         </div>
       </div>
     </div>
- 
+
     <!-- エビデンス根拠 -->
     <div class="evidence-section">
       <div class="evidence-title">試算の根拠・参考文献</div>
@@ -682,13 +679,13 @@ input[type=range]::-webkit-slider-thumb {
         <li>本エンジンの試算値は上記研究の推計値をもとにした参考値であり、個人差があります。確定的な医療効果を保証するものではありません</li>
       </ul>
     </div>
- 
+
     <div style="text-align:center;margin-top:40px">
       <button class="calc-btn" style="max-width:320px" onclick="reset()">もう一度試算する</button>
     </div>
   </div>
 </main>
- 
+
 <script>
 const EVIDENCE = {
   // 年齢層別 年間医療費削減推計（円）：習慣的歩行者vs非習慣者の差
@@ -705,15 +702,15 @@ const EVIDENCE = {
     return 0.50;
   }
 };
- 
+
 function fmt(n) {
   return Math.round(n).toLocaleString('ja-JP');
 }
- 
+
 function reiwa(y) {
   return `令和${y - 2018}年度（${y}年）`;
 }
- 
+
 function calculate() {
   const name  = document.getElementById('inp-name').value.trim() || '参加者';
   const year  = parseInt(document.getElementById('inp-year').value);
@@ -722,39 +719,39 @@ function calculate() {
   const days  = parseInt(document.getElementById('sl-days').value);
   const mins  = parseInt(document.getElementById('sl-min').value);
   const yrs   = parseInt(document.getElementById('sl-years').value);
- 
+
   // 試算計算
   const base       = EVIDENCE.annual_saving[age];
   const regionMult = EVIDENCE.region_factor[region];
   const achiev     = EVIDENCE.achievement_factor(days);
   const contMult   = EVIDENCE.continuity[Math.min(yrs, 10)];
   const minBonus   = mins >= 60 ? 1.15 : mins >= 45 ? 1.08 : mins >= 30 ? 1.04 : 1.0;
- 
+
   const annualSaving = Math.round(base * regionMult * achiev * minBonus);
- 
+
   // 累計：継続年数分を複利で積み上げ
   let cumulative = 0;
   for (let i = 1; i <= yrs; i++) {
     const c = EVIDENCE.continuity[Math.min(i, 10)];
     cumulative += Math.round(base * regionMult * achiev * minBonus * c);
   }
- 
+
   // 医療費削減内訳
   const medSaving  = Math.round(annualSaving * 0.62);
   const careSaving = Math.round(annualSaving * 0.28);
   const othSaving  = Math.round(annualSaving * 0.10);
- 
+
   // 表示更新
   document.getElementById('r-badge').textContent   = `${year}年 参加証明`;
   document.getElementById('r-annual').textContent  = fmt(annualSaving);
   document.getElementById('r-total').textContent   = fmt(cumulative);
   document.getElementById('r-days').textContent    = days;
- 
+
   document.getElementById('nd-year').textContent  = reiwa(year);
   document.getElementById('nd-name').textContent  = name;
   document.getElementById('nd-date').textContent  =
     new Date().toLocaleDateString('ja-JP', {year:'numeric',month:'long',day:'numeric'});
- 
+
   // 通知書本文
   const achievPct = Math.round(days / 31 * 100);
   document.getElementById('nd-body').innerHTML = `
@@ -762,58 +759,59 @@ function calculate() {
     31日中 <span class="highlight">${days}日（達成率${achievPct}%）</span>、
     1日平均 <span class="highlight">${mins}分</span> の歩行習慣を実践されました。</p>
     <br>
-    <p>この取り組みにより、将来の医療費・介護費の削減に寄与した推計額は：</p>
-    <span class="amount-big">年間 ${fmt(annualSaving)} 円</span>
-    <p>（参加${yrs}年間の累計推計額：<span class="highlight">${fmt(cumulative)} 円</span>）</p>
+    <p>この取り組みにより、将来の医療費・介護費の削減に寄与した社会貢献は：</p>
+    <span class="amount-big">年間 ${fmt(annualSaving)} <span style="font-size:22px">AMI</span></span>
+    <p>（参加${yrs}年間の累計：<span class="highlight">${fmt(cumulative)} AMI</span> / 参考換算値 約${fmt(cumulative)}円相当）</p>
     <br>
     <p>上記は、厚生労働省・国立長寿医療研究センターのデータをもとに、
     歩行習慣の継続による健康寿命延伸効果から試算した参考値です。</p>
   `;
- 
+
   // 内訳テーブル
   document.getElementById('nd-table-body').innerHTML = `
     <tr>
       <td>医療費削減（外来・入院）</td>
       <td>歩行習慣による疾病予防効果</td>
-      <td class="val">${fmt(medSaving)} 円</td>
+      <td class="val">${fmt(medSaving)} AMI</td>
     </tr>
     <tr>
       <td>介護費削減</td>
       <td>要介護リスク低減・自立期間延長</td>
-      <td class="val">${fmt(careSaving)} 円</td>
+      <td class="val">${fmt(careSaving)} AMI</td>
     </tr>
     <tr>
       <td>その他社会的費用削減</td>
       <td>救急搬送・社会復帰支援等</td>
-      <td class="val">${fmt(othSaving)} 円</td>
+      <td class="val">${fmt(othSaving)} AMI</td>
     </tr>
     <tr style="background:var(--paper-warm)">
       <td><strong>合計（今年度推計）</strong></td>
       <td></td>
-      <td class="val"><strong>${fmt(annualSaving)} 円</strong></td>
+      <td class="val"><strong>${fmt(annualSaving)} AMI</strong></td>
     </tr>
   `;
- 
+
   // インパクト換算
   const schoolMeals = Math.round(cumulative / 270);
   const childDays   = Math.round(cumulative / 1500);
   document.getElementById('nd-impact').innerHTML =
-    `あなたの累計貢献額 <strong>${fmt(cumulative)}円</strong> は、
+    `あなたの累計貢献額 <strong>${fmt(cumulative)} AMI</strong>（参考換算値 約${fmt(cumulative)}円相当）は、
     子どもたちの給食 <strong>約${fmt(schoolMeals)}食分</strong>、
     または体験活動支援 <strong>約${childDays}日分</strong> に相当します。<br>
     「歩く」という日常の積み重ねが、社会の未来をつくっています。`;
- 
+
   document.getElementById('calc-section').style.display = 'none';
   const ra = document.getElementById('result-area');
   ra.classList.add('visible');
   ra.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
- 
+
 function reset() {
   document.getElementById('calc-section').style.display = 'block';
   document.getElementById('result-area').classList.remove('visible');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 </script>
-</body>
-</html>
+
+
+</body></html>
