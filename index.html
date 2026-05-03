@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!-- saved from url=(0057)file:///C:/Users/tachi/Downloads/ashino8020_engine_2.html -->
-<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>足の８０２０ 社会貢献試算エンジン — AMI</title>
+<title>足の８０２０ウォーキング2026 参加証 — AMI社会貢献試算</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500&family=DM+Serif+Display&display=swap');
 
@@ -508,14 +508,13 @@ input[type=range]::-webkit-slider-thumb {
 
 <header class="site-header">
   <span class="logo">足の８０２０</span>
-  <span class="sub">Social Contribution Engine · 社会貢献試算エンジン — AMI単位</span>
+  <span class="sub">参加証 &amp; AMI社会貢献試算 · 足の８０２０ウォーキング2026</span>
 </header>
 
 <main class="main">
-  <h1 class="page-title">あなたの「歩く」が、<br>社会をどれだけ変えたか。</h1>
+  <h1 class="page-title">足の８０２０ウォーキング2026<br>参加証 &amp; AMI社会貢献試算</h1>
   <p class="page-sub">
-    歩行習慣による健康寿命の延伸は、医療費・介護費の削減に直接つながります。<br>
-    厚生労働省のデータをもとに、あなたの社会貢献を <strong>AMI</strong>（1 AMI = 1円換算の独自単位）で試算します。
+    あなたの参加を記録し、歩行習慣による健康寿命への影響を厚生労働省のデータをもとに<strong>AMI</strong>（1 AMI = 1円換算の個人の目安・動機づけのための参考値）で試算します。
   </p>
 
   <div class="card" id="calc-section">
@@ -543,7 +542,7 @@ input[type=range]::-webkit-slider-thumb {
         <select id="inp-age">
           <option value="30">30代</option>
           <option value="40">40代</option>
-          <option value="50" selected="">50代</option>
+          <option value="50" selected>50代</option>
           <option value="60">60代</option>
           <option value="70">70代以上</option>
         </select>
@@ -553,7 +552,7 @@ input[type=range]::-webkit-slider-thumb {
         <label>居住地域</label>
         <select id="inp-region">
           <option value="city">政令指定都市・大都市</option>
-          <option value="urban" selected="">地方中核都市</option>
+          <option value="urban" selected>地方中核都市</option>
           <option value="rural">町村・過疎地域</option>
         </select>
         <p class="hint">地域により一人あたり医療費の水準が異なります</p>
@@ -565,7 +564,8 @@ input[type=range]::-webkit-slider-thumb {
         <span>5月中に歩いた日数</span>
         <span><span class="slider-val" id="val-days">18</span><span class="slider-unit">日 / 31日中</span></span>
       </div>
-      <input type="range" id="sl-days" min="1" max="31" value="18" step="1" oninput="document.getElementById(&#39;val-days&#39;).textContent=this.value">
+      <input type="range" id="sl-days" min="1" max="31" value="18" step="1"
+        oninput="document.getElementById('val-days').textContent=this.value">
     </div>
 
     <div class="slider-row">
@@ -573,7 +573,8 @@ input[type=range]::-webkit-slider-thumb {
         <span>1日あたりの平均歩行時間</span>
         <span><span class="slider-val" id="val-min">28</span><span class="slider-unit">分</span></span>
       </div>
-      <input type="range" id="sl-min" min="20" max="90" value="28" step="1" oninput="document.getElementById(&#39;val-min&#39;).textContent=this.value">
+      <input type="range" id="sl-min" min="20" max="90" value="28" step="1"
+        oninput="document.getElementById('val-min').textContent=this.value">
     </div>
 
     <div class="slider-row">
@@ -581,11 +582,12 @@ input[type=range]::-webkit-slider-thumb {
         <span>足の８０２０への参加継続年数</span>
         <span><span class="slider-val" id="val-years">1</span><span class="slider-unit">年</span></span>
       </div>
-      <input type="range" id="sl-years" min="1" max="10" value="1" step="1" oninput="document.getElementById(&#39;val-years&#39;).textContent=this.value">
+      <input type="range" id="sl-years" min="1" max="10" value="1" step="1"
+        oninput="document.getElementById('val-years').textContent=this.value">
       <p class="hint" style="margin-top:8px">継続年数が増えると、習慣化による複利効果が加算されます</p>
     </div>
 
-    <button class="calc-btn" onclick="calculate()">社会貢献AMIを試算する</button>
+    <button class="calc-btn" onclick="calculate()">参加証とAMI試算を発行する</button>
   </div>
 
   <!-- 結果エリア -->
@@ -616,7 +618,7 @@ input[type=range]::-webkit-slider-thumb {
     <!-- 通知書 -->
     <div class="notice-wrap">
       <div class="notice-toolbar">
-        <span>AMI 社会貢献通知書（プレビュー）</span>
+        <span>足の８０２０ウォーキング2026 参加証 &amp; AMI社会貢献試算</span>
         <button class="print-btn" onclick="window.print()">印刷 / PDF保存</button>
       </div>
 
@@ -627,8 +629,8 @@ input[type=range]::-webkit-slider-thumb {
         </div>
 
         <div class="notice-title-block">
-          <h1>AMI 社会貢献通知書</h1>
-          <div class="notice-sub">AMI Social Contribution Certificate</div>
+          <h1>足の８０２０ウォーキング2026<br>参加証</h1>
+          <div class="notice-sub">AMI社会貢献試算付　· Participation Certificate with AMI Social Contribution Estimate</div>
         </div>
 
         <div class="notice-recipient">
@@ -645,7 +647,7 @@ input[type=range]::-webkit-slider-thumb {
             <tr>
               <th>項目</th>
               <th>内容</th>
-              <th style="text-align:right">AMI</th>
+              <th style="text-align:right">AMI（参考値）</th>
             </tr>
           </thead>
           <tbody id="nd-table-body">
@@ -679,6 +681,20 @@ input[type=range]::-webkit-slider-thumb {
         <li>本エンジンの試算値は上記研究の推計値をもとにした参考値であり、個人差があります。確定的な医療効果を保証するものではありません</li>
       </ul>
     </div>
+
+
+        <!-- 免責事項 -->
+        <div style="background:#fff;border:1px solid #d4ccbb;border-radius:12px;padding:20px 24px;margin-top:20px;">
+          <p style="font-size:12px;font-weight:500;color:#1a1a18;margin-bottom:10px;">AMIについて</p>
+          <p style="font-size:13px;color:#2d6a4f;font-weight:500;margin-bottom:8px;">
+            AMIはあくまで個人の目安・動機づけのための参考値です。
+          </p>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:4px;">
+            <li style="font-size:11px;color:#8a8a84;padding-left:12px;position:relative;"><span style="position:absolute;left:0;color:#d4ccbb;">·</span>実際の社会保障費削減を保証・約束するものではありません。</li>
+            <li style="font-size:11px;color:#8a8a84;padding-left:12px;position:relative;"><span style="position:absolute;left:0;color:#d4ccbb;">·</span>寄付や社会保障制度への直接的な還元を意味するものではありません。</li>
+            <li style="font-size:11px;color:#8a8a84;padding-left:12px;position:relative;"><span style="position:absolute;left:0;color:#d4ccbb;">·</span>健康効果を医学的に保証するものではありません。</li>
+          </ul>
+        </div>
 
     <div style="text-align:center;margin-top:40px">
       <button class="calc-btn" style="max-width:320px" onclick="reset()">もう一度試算する</button>
@@ -759,7 +775,7 @@ function calculate() {
     31日中 <span class="highlight">${days}日（達成率${achievPct}%）</span>、
     1日平均 <span class="highlight">${mins}分</span> の歩行習慣を実践されました。</p>
     <br>
-    <p>この取り組みにより、将来の医療費・介護費の削減に寄与した社会貢献は：</p>
+    <p>この参加を記念して、歩行習慣による将来への影響をAMIで試算した参考値は：</p>
     <span class="amount-big">年間 ${fmt(annualSaving)} <span style="font-size:22px">AMI</span></span>
     <p>（参加${yrs}年間の累計：<span class="highlight">${fmt(cumulative)} AMI</span> / 参考換算値 約${fmt(cumulative)}円相当）</p>
     <br>
@@ -812,6 +828,5 @@ function reset() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 </script>
-
-
-</body></html>
+</body>
+</html>
